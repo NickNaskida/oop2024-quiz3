@@ -28,4 +28,26 @@ public class Person {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    /**
+     * Check in a person to a room.
+     *
+     * @param person The person to check in.
+     * @param room   The room to check in the person to.
+     */
+    public void checkIn(Person person, Room room) {
+        // Add the person to the room
+        room.checkIn(person);
+    }
+
+    /**
+     * Check out a person from a room.
+     *
+     * @param person The person to check out.
+     * @param room   The room to check out the person from.
+     */
+    public void checkOut(Person person, Room room) {
+        // Remove the person from the room
+        room.checkOut(person);
+    }
 }
