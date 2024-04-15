@@ -13,7 +13,8 @@ public class HotelManager {
 
 
     /**
-     * Display the hotel information.
+     * Display the information of the hotel.
+     * Display the room ID and the tenants of each room.
      */
     public void displayInfo() {
         for (Map.Entry<Integer, Room> entry : guestRoomMap.entrySet()) {
